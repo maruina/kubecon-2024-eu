@@ -1,0 +1,47 @@
+linters-settings:
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/maruina/kubecon-2024-eu)
+
+linters:
+  disable:
+    - depguard
+    - wrapcheck
+    - gomnd
+    - scopelint
+    - varnamelen
+    - testpackage
+    - tagliatelle
+    - paralleltest
+    - ireturn
+    - goerr113
+    - gochecknoglobals
+    - exhaustivestruct
+    - wsl
+    - exhaustive
+    - nosprintfhostport
+    - nonamedreturns
+    - interfacebloat
+    - exhaustruct
+    - lll
+    - gosec
+    - gomoddirectives
+    - godox
+    - gochecknoinits
+    - funlen
+    - dupl
+    - cyclop
+    # deprecated linters
+    - deadcode
+    - golint
+    - interfacer
+    - structcheck
+    - varcheck
+    - nosnakecase
+    - ifshort
+    - maligned
+    # doesn't work well with e2e-framework
+    - thelper
+  enable-all: true
