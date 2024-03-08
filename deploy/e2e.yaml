@@ -54,8 +54,15 @@ spec:
             image: ghcr.io/maruina/kubecon-2024-eu:latest
             imagePullPolicy: IfNotPresent
             command:
-            - /e2e.test
+            - /e2e-runner.sh
             - -test.v
             - -test.timeout=0
             - -fail-fast=true
+            env:
+              - name: ENV
+                value: "dev"
+              - name: DATADOG_API_KEY
+                value: "PLACEHOLDER"
+              - name: CLUSTER_NAME
+                value: "kind"
           restartPolicy: Never
