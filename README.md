@@ -2,7 +2,9 @@
 
 Companion repository for the presentation `Building Confidence in Kubernetes Controllers: Lessons Learned from Using E2E-Framework`.
 
-## Running the tests
+## Running from a laptop
+
+Running with `go test` allows to run the code against a target cluster, useful while developing a new test.
 
 ```shell
 kind create cluster
@@ -30,4 +32,12 @@ go test -timeout 0 -race -v ./... -args --context kind-kind
         --- PASS: TestPodDns/dns/dns_is_resolving (0.14s)
 PASS
 ok  	github.com/maruina/kubecon-2024-eu	14.350s
+```
+
+## Running on a cluster
+
+Run the docker image as a cronjob on a live cluster to run the tests suite.
+
+```shell
+kubectl apply -f deploy/e2e.yaml
 ```
