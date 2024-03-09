@@ -41,3 +41,7 @@ Run the docker image as a cronjob on a live cluster to run the tests suite.
 ```shell
 kubectl apply -f deploy/e2e.yaml
 ```
+
+## Integrating with CI Visibility
+
+We can generate JUnit XML test reports to integrate with [Datadog Test Visibility](https://docs.datadoghq.com/tests/)
