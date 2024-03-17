@@ -45,3 +45,10 @@ kubectl apply -f deploy/e2e.yaml
 ## Integrating with CI Visibility
 
 We can generate JUnit XML test reports to integrate with [Datadog Test Visibility](https://docs.datadoghq.com/tests/)
+
+![Screenshot 2024-03-17 at 13-56-16 CI Tests Datadog](https://github.com/maruina/kubecon-2024-eu/assets/4821896/a9e5959c-cf63-4894-8f79-ef8aab6d6ceb)
+
+![test_details](https://github.com/maruina/kubecon-2024-eu/assets/4821896/41fbf82a-4c7e-48fa-9e63-40e88ba110d9)
+
+
+
