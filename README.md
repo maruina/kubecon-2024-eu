@@ -1,6 +1,6 @@
 # Building Confidence in Kubernetes Controllers: Lessons Learned from Using E2E-Framework
 
-Companion repository for the presentation `Building Confidence in Kubernetes Controllers: Lessons Learned from Using E2E-Framework`.
+Companion repository for the presentation [Building Confidence in Kubernetes Controllers: Lessons Learned from Using E2E-Framework](https://www.youtube.com/watch?v=Y0R1NAb16Ds).
 
 ## Running from a laptop
 
